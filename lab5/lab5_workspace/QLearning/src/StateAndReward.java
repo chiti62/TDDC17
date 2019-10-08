@@ -56,10 +56,10 @@ public class StateAndReward {
 		/* TODO: IMPLEMENT THIS FUNCTION */
 	
 		double rewardAngle = getRewardAngle(angle, 0, 0);
-		double rewardVx = (vMax - Math.abs(vx)) / vMax;
-		double rewardVy = (vMax - Math.abs(vy)) / vMax;
+		double rewardVx = Math.exp((vMax - Math.abs(vx)) / vMax);
+		double rewardVy = Math.exp((vMax - Math.abs(vy)) / vMax);
 		
-		double reward = rewardAngle + (rewardVx + rewardVy)*2;
+		double reward = Math.exp(1)*rewardAngle + (rewardVx + rewardVy);
 
 		return reward;
 	}
