@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+/Users/tingting/Google Drive/LiU/AI/lab1/TDDC17_lab1/lab1_workspace/.metadata/.plugins/org.eclipse.jdt.core
+2917382390.index
+4155219971.index
+1080065135.index
+3128207647.index
